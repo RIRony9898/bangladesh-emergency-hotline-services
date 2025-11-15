@@ -24,35 +24,49 @@
     <header>
       <!-- navbar section start -->
       <nav
-        class="flex flex-col md:flex-row justify-between items-center py-4 px-6"
+        class="flex flex-col md:flex-row justify-between items-center py-4 px-6 container mx-auto"
       >
-        <div class="flex items-center gap-4">
-          <img src="./assets/logo.png" alt="" class="h-[60px] w-[60px]" />
+        <div class="flex items-center gap-2 md:gap-4">
+          <img
+            src="./assets/logo.png"
+            alt=""
+            class="h-[40px] w-[40px] md:h-[60px] md:w-[60px]"
+          />
           <p
-            class="text-[#006747] font-extrabold text-[22px] leading-6 text-center md:text-left"
+            class="text-[#006747] font-extrabold text-[16px] md:text-[22px] leading-5 md:leading-6 text-center md:text-left"
           >
             Emergency <br />
             Service
           </p>
         </div>
-        <div class="flex gap-3 mt-3 md:mt-0 text-[18px] font-bold">
+        <div
+          class="flex gap-2 md:gap-3 mt-3 md:mt-0 text-[14px] md:text-[18px] font-bold"
+        >
           <div
             id="heart-container"
-            class="flex gap-2 items-center rounded-full bg-[#41FF6B1A] px-4 py-2"
+            class="flex gap-1 md:gap-2 items-center rounded-full bg-[#41FF6B1A] px-2 md:px-4 py-2"
           >
             <h3 id="heart-count">0</h3>
-            <img src="./assets/heart.png" alt="" class="h-[20px] w-[20px]" />
+            <img
+              src="./assets/heart.png"
+              alt=""
+              class="h-[16px] w-[16px] md:h-[20px] md:w-[20px]"
+            />
           </div>
           <div
             id="points-container"
-            class="flex gap-2 items-center rounded-full bg-[#41FF6B1A] px-4 py-2"
+            class="flex gap-1 md:gap-2 items-center rounded-full bg-[#41FF6B1A] px-2 md:px-4 py-2"
           >
             <h3 id="points-count">100</h3>
-            <img src="./assets/coin.png" alt="" class="h-[20px] w-[20px]" />
+            <img
+              src="./assets/coin.png"
+              alt=""
+              class="h-[16px] w-[16px] md:h-[20px] md:w-[20px]"
+            />
           </div>
           <div
             id="copy-container"
-            class="flex gap-2 items-center rounded-full bg-[#00A63E] px-4 py-2 text-white"
+            class="flex gap-1 md:gap-2 items-center rounded-full bg-[#00A63E] px-2 md:px-4 py-2 text-white"
           >
             <h3 id="copy-count">0</h3>
             <h3>Copy</h3>
@@ -67,12 +81,16 @@
       <section
         class="flex flex-col items-center justify-center text-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] px-4 py-6"
       >
-        <img src="./assets/logo.png" alt="" class="w-[80px] h-[80px] mb-2" />
+        <img
+          src="./assets/logo.png"
+          alt=""
+          class="w-[60px] h-[60px] md:w-[80px] md:h-[80px] mb-2"
+        />
         <div class="text-white">
-          <h1 class="font-bold text-[28px] md:text-[40px]">
+          <h1 class="font-bold text-[24px] md:text-[28px] lg:text-[40px]">
             Emergency Service Directory
           </h1>
-          <p class="text-sm md:text-base py-3">
+          <p class="text-xs md:text-sm lg:text-base py-3">
             Government Emergency Services at Your Fingertip &ndash; A Project by
             Government of the People&rsquo;s Republic of Bangladesh
           </p>
@@ -85,7 +103,7 @@
     <!-- ===================== -->
 
     <!-- main section start -->
-    <main>
+    <main class="container mx-auto">
       <!--card section design start-->
       <section class="mt-6 p-4 flex flex-col lg:flex-row justify-between gap-6">
         <!-- left section cards design start -->
@@ -473,13 +491,13 @@
           class="w-full lg:w-[350px] bg-white shadow-lg rounded-xl p-4 min-h-[300px]"
         >
           <div class="flex justify-between items-center">
-            <p class="font-extrabold text-[24px] text-[#111111]">
+            <p class="font-extrabold text-[20px] md:text-[24px] text-[#111111]">
               <i class="fa-regular fa-clock mr-1"></i>
               Call History
             </p>
             <button
               id="clear-history"
-              class="rounded-full bg-[#00A63E] px-4 py-2 text-white font-semibold hover:bg-green-800"
+              class="rounded-full bg-[#00A63E] px-3 md:px-4 py-2 text-white font-semibold hover:bg-green-800 text-sm md:text-base"
             >
               Clear
             </button>
@@ -494,7 +512,59 @@
     <!-- ===================== -->
 
     <!-- footer section start -->
-    <footer></footer>
+    <footer
+      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white py-8 px-4 mt-8"
+    >
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/3 mb-6 md:mb-0">
+            <img
+              src="./assets/logo.png"
+              alt="Emergency Service Logo"
+              class="h-[50px] w-[50px] mb-2"
+            />
+            <p class="text-sm">Government Emergency Services</p>
+            <p class="text-sm">People's Republic of Bangladesh</p>
+          </div>
+          <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h3 class="font-bold text-lg mb-2">Emergency Contacts</h3>
+              <ul class="text-sm space-y-1">
+                <li>National Emergency: 999</li>
+                <li>Police: 999</li>
+                <li>Fire Service: 999</li>
+                <li>Ambulance: 1994-999999</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Quick Links</h3>
+              <ul class="text-sm space-y-1">
+                <li><a href="#" class="hover:underline">About Us</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+                <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                <li>
+                  <a href="#" class="hover:underline">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-2">Contact Us</h3>
+              <ul class="text-sm space-y-1">
+                <li>Address: Dhaka, Bangladesh</li>
+                <li>Email: info@emergency.gov.bd</li>
+                <li>Phone: +880-2-9999999</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-white/20 text-center">
+          <p class="text-sm">
+            &copy; 2024 Government of the People's Republic of Bangladesh. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- footer section end -->
 
     <script src="./index.js"></script>
