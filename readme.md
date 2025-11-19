@@ -1,5 +1,8 @@
 # Bangladesh Emergency Hotline Services
 
+## Description
+“The Bangladesh Emergency Hotline Number website is a useful resource that allows users to easily find contact numbers for various government and non-government services.”
+
 ## Answers to Questions
 
 #### What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
